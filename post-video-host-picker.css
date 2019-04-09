@@ -1,0 +1,18 @@
+.selected-host {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.not-selected-host {
+  background-color: white;
+  color: #8c979e;
+  cursor: pointer;
+}
+
+.not-selected-host:hover {
+  background-color: pink;
+  color: white;
+  text-decoration: underline;
+}
