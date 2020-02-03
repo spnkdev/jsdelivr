@@ -7,6 +7,7 @@ function chooseHost(host) {
         { name: 'gdrive' },
         { name: 'dailymotion' },
         { name: 'mega' },
+        { name: 'okru' },
         { name: 'openload' },
         { name: 'streamango' }
     ];
@@ -25,7 +26,7 @@ function chooseHost(host) {
             document.getElementById(videoHost.name+'TableCell').classList.add('selected-host');
             document.getElementById(videoHost.name+'TableCell').classList.remove('not-selected-host');
         }
-        
+
 
         video.style.display = "block";
 
