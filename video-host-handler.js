@@ -11,9 +11,18 @@ function chooseHost(host) {
         { name: 'openload' },
         { name: 'streamango' }
     ];
+    var availableHosts = [];
 
-    for (let hostIndex = 0; hostIndex < videoHosts.length; hostIndex++) {
-        const videoHost = videoHosts[hostIndex];
+    for (let host = 0; host < videoHosts.length; host++) {
+        const videoHost = videoHosts[host];
+
+        if (document.getElementById(videoHost.name)) {
+            availableHosts.push(videoHost)
+        }
+    }
+
+    for (let hostIndex = 0; hostIndex < availableHosts.length; hostIndex++) {
+        const videoHost = availableHosts[hostIndex];
 
         if (videoHost.name !== host) {
 
@@ -29,6 +38,5 @@ function chooseHost(host) {
 
 
         video.style.display = "block";
-
     }
 }
